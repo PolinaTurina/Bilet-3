@@ -2,16 +2,30 @@
 
 {% block content %}
 
+    {%for category in categories%}
+    <a href="">{{category.name}}</a>
+    {%endfor%}
+
+    <form action="" method="get">
+    <input type="search" name="q" placeholder="введите категорию">
+    {{form.category}}
+    <button type="submit">Искать</button>
+    </form>
+
+
     <div style="width: 80%;">
     <div class="site">
     {% for tovar in tovar_list %}
+
         <div class="tovar_block">
             <img src="{{tovar.image.url}}" style="width: 200px;">
             <p class="tovar_name">{{tovar.name}}</p>
             <p class="tovar_price">{{tovar.price}} руб.</p>
         </div>
+    
     {% endfor %}
     </div>
     </div>
+
 
 {% endblock %}
