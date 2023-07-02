@@ -7,3 +7,9 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = ['name']
     search_fields = ['name']
     list_filter = ['name']
+
+@admin.register(Tovar)
+class TovarAdmin(admin.ModelAdmin):
+    list_display = ['name', 'image', 'category' ,'text', 'price', 'count']
+    search_fields = ['name', 'category']
+    list_filter = ['name', 'price', 'count', 'category']

@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tovar_block{
+    border: 1px solid #938a8a5c;
+    display: flex;
+    background-color: #f4fdfdc7;
+    flex-direction: column;
+    width: 250px;
+    align-items: center;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 220px;
+}
+
+.tovar_name{
+    font-size: 20px;
+}
+.tovar_price{
+    font-size: 18px;
+    color: brown;
+}
+
+.site{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #67856b;
+}

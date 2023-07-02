@@ -1,0 +1,17 @@
+{% extends 'root.html' %}
+
+{% block content %}
+
+    <div style="width: 80%;">
+    <div class="site">
+    {% for tovar in tovar_list %}
+        <div class="tovar_block">
+            <img src="{{tovar.image.url}}" style="width: 200px;">
+            <p class="tovar_name">{{tovar.name}}</p>
+            <p class="tovar_price">{{tovar.price}} руб.</p>
+        </div>
+    {% endfor %}
+    </div>
+    </div>
+
+{% endblock %}
